@@ -1,0 +1,20 @@
+.second_nav {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 120px;
+}
+.text_light_black {
+  color: #0e0d0d;
+}
+.nav_text_with_icons {
+  display: inline-block;
+}
+.nav-link {
+  font-family: Verdana !important;
+}
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
