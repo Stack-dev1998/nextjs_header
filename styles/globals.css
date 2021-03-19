@@ -22,3 +22,14 @@ p,
 pre {
   margin: 0;
 }
+
+@media (max-width: 1022px) {
+  .big_screen_header {
+    display: none;
+  }
+}
+@media (min-width: 1022px) {
+  .small_screen_header {
+    display: none;
+  }
+}

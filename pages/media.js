@@ -1,16 +1,15 @@
-import Head from "next/head";
-
-import Header from "../components/common/bigScreenHeader";
+import BigScreenHeader from "../components/common/bigScreenHeader";
+import SmallScreenHeader from "../components/common/smallScreenHeader";
 export default function Home() {
+  const useWindowDimensions = () => {
+    
   return (
     <div>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Header />
-      <div style={{ height: "500px", background: "black" }}>
-        <h1>Media page goes here...</h1>
+      <div className="big_screen_header">
+        <BigScreenHeader />
+      </div>
+      <div className="small_screen_header">
+        <SmallScreenHeader />
       </div>
     </div>
   );
