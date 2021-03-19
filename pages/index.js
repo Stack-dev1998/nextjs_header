@@ -9,6 +9,9 @@ export default function Home() {
       <div className="small_screen_header">
         <SmallScreenHeader />
       </div>
+      <div style={{ height: "500px", background: "black" }}>
+        <h1>main section goes here...</h1>
+      </div>
     </div>
   );
 }
