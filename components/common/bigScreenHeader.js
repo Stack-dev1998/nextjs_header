@@ -199,7 +199,12 @@ export default function BigScreenHeader() {
         <Navbar
           bg="light"
           variant="light"
-          style={{ marginTop: "-10px" }}
+          style={{
+            marginTop: "-10px",
+            position: "absolute",
+            width: "100%",
+            zIndex: "1",
+          }}
           className={"py-0 " + style.sub_menu}
         >
           <Container>
@@ -228,7 +233,12 @@ export default function BigScreenHeader() {
         <Navbar
           bg="light"
           variant="light"
-          style={{ marginTop: "-10px" }}
+          style={{
+            marginTop: "-10px",
+            position: "absolute",
+            width: "100%",
+            zIndex: "1",
+          }}
           className={"py-0 " + style.sub_menu}
         >
           <Container>
