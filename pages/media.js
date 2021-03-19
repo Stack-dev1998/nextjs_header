@@ -1,8 +1,6 @@
 import BigScreenHeader from "../components/common/bigScreenHeader";
 import SmallScreenHeader from "../components/common/smallScreenHeader";
 export default function Home() {
-  const useWindowDimensions = () => {
-    
   return (
     <div>
       <div className="big_screen_header">

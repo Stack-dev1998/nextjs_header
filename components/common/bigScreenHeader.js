@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useRouter } from "next/router";
 import { Link } from "next/link";
 import { Container, Navbar, Nav } from "react-bootstrap";
@@ -8,6 +9,8 @@ import Topbar from "./topbar"; //top bar imported
 
 //big screen header
 export default function BigScreenHeader() {
+  const [menAndWomenMenu, setMenAndWomenMenu] = useState(false);
+  const [mediaMenu, setMediaMenu] = useState(false);
   const router = useRouter();
   return (
     <div>
@@ -89,21 +92,45 @@ export default function BigScreenHeader() {
             <Nav.Link
               href="#home"
               style={{ fontWeight: "500" }}
-              className={"py-0" + style.text_light_black}
+              className={
+                ("py-0" + style.text_light_black, style.menAndWomenMenu)
+              }
+              onMouseOver={() => {
+                setMenAndWomenMenu(true);
+              }}
+              onMouseOut={() => {
+                setMenAndWomenMenu(false);
+              }}
             >
               Women
             </Nav.Link>
             <Nav.Link
               href="#features"
               style={{ marginLeft: "32px", fontWeight: "500" }}
-              className={"pl-4 ml-4" + style.text_light_black}
+              className={
+                ("pl-4 ml-4" + style.text_light_black, style.menAndWomenMenu)
+              }
+              onMouseOver={() => {
+                setMenAndWomenMenu(true);
+              }}
+              onMouseOut={() => {
+                setMenAndWomenMenu(false);
+              }}
             >
               Man
             </Nav.Link>
             <Nav.Link
               href="#pricing"
               style={{ marginLeft: "32px", fontWeight: "500" }}
-              className={"pl-4" + style.text_light_black}
+              className={
+                ("pl-4" + style.text_light_black, style.menAndWomenMenu)
+              }
+              onMouseOver={() => {
+                setMediaMenu(true);
+              }}
+              onMouseOut={() => {
+                setMediaMenu(false);
+              }}
             >
               The media
             </Nav.Link>
@@ -168,6 +195,64 @@ export default function BigScreenHeader() {
           </Nav>
         </Container>
       </Navbar>
+      {menAndWomenMenu ? (
+        <Navbar
+          bg="light"
+          variant="light"
+          style={{ marginTop: "-10px" }}
+          className={"py-0 " + style.sub_menu}
+        >
+          <Container>
+            <Nav>
+              <Nav.Link href="#pricing">Clothing</Nav.Link>
+              <Nav.Link href="#pricing" className="ml-3">
+                New Arrivals
+              </Nav.Link>
+              <Nav.Link href="#pricing" className="ml-3">
+                Footwear
+              </Nav.Link>
+              <Nav.Link href="#pricing" className="ml-3">
+                Accessories
+              </Nav.Link>
+              <Nav.Link href="#pricing" className="ml-3">
+                Brands
+              </Nav.Link>
+              <Nav.Link href="#pricing" className="ml-3">
+                Outlet
+              </Nav.Link>
+            </Nav>
+          </Container>
+        </Navbar>
+      ) : null}
+      {mediaMenu ? (
+        <Navbar
+          bg="light"
+          variant="light"
+          style={{ marginTop: "-10px" }}
+          className={"py-0 " + style.sub_menu}
+        >
+          <Container>
+            <Nav>
+              <Nav.Link href="#pricing">Clothing</Nav.Link>
+              <Nav.Link href="#pricing" className="ml-3">
+                To begin
+              </Nav.Link>
+              <Nav.Link href="#pricing" className="ml-3">
+                What is the problem?
+              </Nav.Link>
+              <Nav.Link href="#pricing" className="ml-3">
+                Practical sheets
+              </Nav.Link>
+              <Nav.Link href="#pricing" className="ml-3">
+                Our reviews
+              </Nav.Link>
+              <Nav.Link href="#pricing" className="ml-3">
+                The suveys
+              </Nav.Link>
+            </Nav>
+          </Container>
+        </Navbar>
+      ) : null}
     </div>
   );
 }

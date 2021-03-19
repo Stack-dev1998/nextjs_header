@@ -5,7 +5,13 @@
 }
 .text_light_black {
   color: #0e0d0d;
+  text-align: center;
 }
 .nav_text_with_icons {
   display: inline-block;
+}
+
+.menAndWomenMenu:hover {
+  padding-top: 10px;
+  background-color: #f8f9fa;
 }
