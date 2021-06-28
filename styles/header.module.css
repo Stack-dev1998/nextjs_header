@@ -1,17 +1,276 @@
-.second_nav {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 120px;
+/*---------------------------------First Navbar css-----------------*/
+.top_navbar {
+  background-color: #f5f5f5;
 }
-.text_light_black {
-  color: #0e0d0d;
-  text-align: center;
+.top_navbar_row {
+  height: 34px;
+  font-size: 12px;
+}
+.top_navbar_row div,
+#1st_nav,
+#2nd_nav {
+  width: 33.3333333%;
+  height: inherit;
+}
+/*---------------------------------Second navbar css-----------------*/
+
+.main_navbar_row {
+  height: 50px;
+  font-size: 14px;
+}
+
+.link_with_icon {
+  position: relative;
+  display: block;
+  font-weight: 700;
+}
+.link_with_icon:after {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  --tw-border-opacity: 1;
+  border-color: rgba(238, 238, 238, var(--tw-border-opacity));
+  border-top-width: 1px;
+  border-left-width: 1px;
+  position: absolute;
+  bottom: 0;
+  transform: rotate(45deg) translateX(8px);
+  content: "";
+  width: 12px;
+  height: 12px;
+  right: 50%;
+}
+
+.font_size {
+  font-size: 14px;
+}
+.logo_img {
+  height: 13.28px !important;
+  font-size: 13px !important;
 }
 .nav_text_with_icons {
   display: inline-block;
 }
 
-.menAndWomenMenu:hover {
-  padding-top: 10px;
-  background-color: #f8f9fa;
+/*---------------------------------hover effects for sub navs-----------------*/
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*-----------------------------------------man and women sub nav------*/
+.man_and_women_sub_nav {
+  transition: 0.2s;
+}
+.man_and_women_sub_nav:hover {
+  margin-top: 5px;
+  background-color: #eee;
+}
+.man_and_women_sub_nav_content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #eee;
+  width: 100%;
+  z-index: 1;
+}
+.man_and_women_sub_nav:hover .man_and_women_sub_nav_btn {
+  font-weight: 500;
+}
+.man_and_women_sub_nav:hover .man_and_women_sub_nav_content {
+  animation: fadein 0.4s;
+  display: block;
+}
+
+/*--------------------------  inside man and women sub navs --------------------------*/
+/*===================Clothing  sub nav=============*/
+.clothing_sub_nav {
+  transition: 0.2s;
+}
+.clothing_sub_nav:hover {
+  margin-top: 5px;
+  background-color: white;
+}
+.clothing_sub_nav_content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  z-index: 1;
+}
+.clothing_sub_nav:hover .clothing_sub_nav_btn {
+  font-weight: 500;
+}
+.clothing_sub_nav:hover .clothing_sub_nav_content {
+  animation: fadein 0.4s;
+  display: block;
+}
+
+/*===================New arrivals  sub nav=============*/
+.new_arrivals_sub_nav {
+  transition: 0.2s;
+}
+.new_arrivals_sub_nav:hover {
+  margin-top: 5px;
+  background-color: white;
+}
+.new_arrivals_sub_nav_content {
+  display: none;
+  position: absolute;
+  left: 0;
+  margin: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+}
+.new_arrivals_sub_nav:hover .new_arrivals_sub_nav_btn {
+  font-weight: 500;
+}
+.new_arrivals_sub_nav:hover .new_arrivals_sub_nav_content {
+  animation: fadein 0.4s;
+  display: block;
+}
+
+/*----------------------------------------------media nav--------------------------------------*/
+.media_sub_nav {
+  transition: 0.2s;
+}
+.media_sub_nav:hover {
+  margin-top: 5px;
+  background-color: #eee;
+}
+.media_sub_nav_content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #eee;
+  width: 100%;
+  z-index: 1;
+}
+.media_sub_nav:hover .media_sub_nav_btn {
+  font-weight: 500;
+}
+.media_sub_nav:hover .media_sub_nav_content {
+  animation: fadein 0.4s;
+  display: block;
+}
+
+/*--------------------------Menues inside  media nav------------------------------------*/
+/* ===============================To begin menu============================ */
+.to_begin_sub_menu {
+  transition: 0.2s;
+}
+.to_begin_sub_menu:hover {
+  margin-top: 5px;
+  background-color: white;
+}
+.to_begin_sub_menu_content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 30%;
+  z-index: 1;
+}
+.to_begin_sub_menu:hover .to_begin_sub_menu_btn {
+  font-weight: 500;
+}
+.to_begin_sub_menu:hover .to_begin_sub_menu_content {
+  animation: fadein 0.4s;
+  display: block;
+}
+
+/* ===============================Problems menu============================ */
+.problems_sub_menu {
+  transition: 0.2s;
+}
+.problems_sub_menu:hover {
+  margin-top: 5px;
+  background-color: white;
+}
+.problems_sub_menu_content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 27%;
+  z-index: 1;
+}
+.problems_sub_menu:hover .problems_sub_menu_btn {
+  font-weight: 500;
+}
+.problems_sub_menu:hover .problems_sub_menu_content {
+  animation: fadein 0.4s;
+  display: block;
+}
+
+/* ===============================Sheets menu============================ */
+.sheets_sub_menu {
+  transition: 0.2s;
+}
+.sheets_sub_menu:hover {
+  margin-top: 5px;
+  background-color: white;
+}
+.sheets_sub_menu_content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 30%;
+  z-index: 1;
+}
+.sheets_sub_menu:hover .sheets_sub_menu_btn {
+  font-weight: 500;
+}
+.sheets_sub_menu:hover .sheets_sub_menu_content {
+  animation: fadein 0.4s;
+  display: block;
+}
+
+/* ===============================Reviews menu============================ */
+.reviews_sub_menu {
+  transition: 0.2s;
+}
+.reviews_sub_menu:hover {
+  margin-top: 5px;
+  background-color: white;
+}
+.reviews_sub_menu_content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 30%;
+  z-index: 1;
+}
+.reviews_sub_menu:hover .reviews_sub_menu_btn {
+  font-weight: 500;
+}
+.reviews_sub_menu:hover .reviews_sub_menu_content {
+  animation: fadein 0.4s;
+  display: block;
+}
+
+/* ===============================Surveys menu============================ */
+.surveys_sub_menu {
+  transition: 0.2s;
+}
+.surveys_sub_menu:hover {
+  margin-top: 5px;
+  background-color: white;
+}
+.surveys_sub_menu_content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 30%;
+  z-index: 1;
+}
+.surveys_sub_menu:hover .surveys_sub_menu_btn {
+  font-weight: 500;
+}
+.surveys_sub_menu:hover .surveys_sub_menu_content {
+  animation: fadein 0.4s;
+  display: block;
 }

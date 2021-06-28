@@ -1,0 +1,24 @@
+.main_image {
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 75vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://d134ahucujhb7v.cloudfront.net/packs/media/images/home/banner-home-c525a3d991311de9e180e5f45452cb71.jpg);
+}
+.what_we_think_section {
+  margin-top: 100px;
+  background-color: #eee; /* Used if the image is unavailable */
+  height: 80vh;
+}
+
+.image_over_div{
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 75vh; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://d134ahucujhb7v.cloudfront.net/packs/media/images/home/banner-home-c525a3d991311de9e180e5f45452cb71.jpg);
+}

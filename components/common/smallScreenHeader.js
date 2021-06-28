@@ -3,11 +3,11 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-import Topbar from "./topbar";
+import TopMessage from "./topMessage";
 export default function SmallScreenHeader() {
   return (
     <div>
-      <Topbar />
+      <TopMessage />
       <Navbar bg="white" variant="light" className="py-0">
         <Container style={{ maxWidth: "95%" }}>
           <Nav>
